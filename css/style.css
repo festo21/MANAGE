@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+html body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    background-color: #f5f8f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.navlink a{
+    color: rgb(32, 31, 35);
+    margin: 0 20px;
+}
+
+.started{
+    background-color: #eb4d25;
+    padding: 10px 20px;
+    border-radius: 60px;
+    color: white;
+}
+
+#hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+    margin: 0 0 40px;
+}
+
+.herodiv{
+    width: 35%;
+}
+
+.herodiv h1{
+   font-size: 50px;
+   margin-top: 65px; 
+}
+
+.herodiv p{
+    font-size: 20px;
+    margin: 30px 0 70px;
+ }
+
+ #about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fcfcfb;
+    padding: 20px 150px;
+}
+
+.aboutwrt{
+    width: 70%;
+}
+
+.aboutwrt h1{
+    font-size: 37px;
+}
+
+.aboutwrt p{
+    font-size: 20px;
+    padding: 21px 0;
+}
+
+.aboutnmb{
+    width: 100%;
+}
+
+.aboutwrt1{
+    margin-bottom: 40px;
+}
+
+.aboutwrt2{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.aboutnmb h2{
+    font-size: 25px;
+}
+
+.aboutext{
+    margin-left: 58px;
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+.aboutwrt2 .num{
+    background-color: #eb4d25;
+    padding: 5px 16px;
+    border-radius: 30px;
+    color: white;
+}
+
+#view{
+    background-color: white;
+    text-align: center;
+    padding: 50px 0 30px;
+    
+    
+}
+
+.viewhead{
+    font-size: 25px;
+}
+
+.opinion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 90px 0 50px;
+}
+
+.viewicon{
+    width: 30%;
+    margin: -50px auto 0;
+}
+
+.a{
+    background-color: rgb(238, 233, 233);
+    padding: 20px;
+    width: 40%;
+    margin: 0 20px;
+}
+
+.a h3{
+    margin: 20px 0 30px;
+}
+
+
+.a p{
+    font-size: 14px;
+}
