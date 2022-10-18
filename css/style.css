@@ -5,7 +5,16 @@
     font-family: 'Raleway', sans-serif;
 }
 
-html body{
+:root{
+    --Bright-Red: hsl(12, 88%, 59%);
+    --Dark-Blue: hsl(228, 39%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%;);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html, body{
     overflow-x: hidden;
 }
 
@@ -14,7 +23,7 @@ a{
 }
 
 #navbar{
-    background-color: #f5f8f1;
+    background-color: var(--Very-Pale-Red);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,20 +31,21 @@ a{
 }
 
 .navlink a{
-    color: rgb(32, 31, 35);
+    color: var(--Dark-Blue);
     margin: 0 20px;
 }
 
 .started{
-    background-color: #eb4d25;
+    background-color: var(--Bright-Red);
     padding: 10px 20px;
     border-radius: 60px;
-    color: white;
+    color: var(--Vary-Light-Gray);
 }
 
 #hero{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 50px 150px;
     margin: 0 0 40px;
 }
@@ -46,18 +56,20 @@ a{
 
 .herodiv h1{
    font-size: 50px;
-   margin-top: 65px; 
+   margin-top: 65px;
+   color: var(--Dark-Blue); 
 }
 
 .herodiv p{
     font-size: 20px;
     margin: 30px 0 70px;
+    color: var(--Very-Dark-Blue);
  }
 
  #about{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background-color: #fcfcfb;
+    background-color: var(--Very-Pale-Red);
     padding: 20px 150px;
 }
 
@@ -67,11 +79,13 @@ a{
 
 .aboutwrt h1{
     font-size: 37px;
+    color: var(--Dark-Blue);
 }
 
 .aboutwrt p{
     font-size: 20px;
     padding: 21px 0;
+    color: var(--Very-Dark-Blue);
 }
 
 .aboutnmb{
@@ -90,19 +104,21 @@ a{
 
 .aboutnmb h2{
     font-size: 25px;
+    color: var(--Dark-Blue);
 }
 
 .aboutext{
     margin-left: 58px;
     margin-top: 16px;
     font-size: 20px;
+    color: var(--Very-Dark-Blue);
 }
 
 .aboutwrt2 .num{
-    background-color: #eb4d25;
+    background-color: var(--Bright-Red);
     padding: 5px 16px;
     border-radius: 30px;
-    color: white;
+    color: var(--Vary-Light-Gray);
 }
 
 #view{
@@ -115,6 +131,7 @@ a{
 
 .viewhead{
     font-size: 25px;
+    color: var(--Dark-Blue);
 }
 
 .opinion{
@@ -126,22 +143,294 @@ a{
 }
 
 .viewicon{
-    width: 30%;
-    margin: -50px auto 0;
+    width: 20%;
+    margin: 10px auto 0;
 }
 
 .a{
-    background-color: rgb(238, 233, 233);
+    background-color: var(--Vary-Light-Gray);
     padding: 20px;
     width: 40%;
+    height: 50%;
     margin: 0 20px;
 }
 
 .a h3{
     margin: 20px 0 30px;
+    color: var(--Dark-Blue);
 }
 
 
 .a p{
     font-size: 14px;
+    color: var(--Very-Pale-Red);
+}
+
+.started1{
+    margin-top: 50px;
+}
+
+#directive{
+    background-color: var(--Bright-Red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 150px;
+}
+
+#directive .started{
+    color: var(--Bright-Red);
+    background-color: var(--Vary-Light-Gray);
+}
+
+.directive1{
+    font-size: 25px;
+    width: 40%;
+    color: var(--Vary-Light-Gray);
+}
+
+#bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 150px;
+    background-color: var(--Very-Dark-Blue);
+}
+
+.bottomimg{
+    color: var(--Vary-Light-Gray);
+    margin-bottom: 50px;
+}
+
+.icon a{
+    color:var(--Vary-Light-Gray);
+}
+
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--Vary-Light-Gray);
+}
+
+.home1, .home2{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    
+}
+
+.home a{
+    color: var(--Vary-Light-Gray);
+    margin: 5px;
+}
+
+.update{
+    display: grid;
+    grid-template-columns: repeat( 1fr);
+    gap: 70px;
+}
+
+.update1{
+     margin-top: 30px;
+}
+
+.update2{
+    background-color: var(--Vary-Light-Gray);
+    padding: 10px 20px;
+    color: var(--Very-Dark-Blue);
+    border-radius: 20px;
+}
+
+.go{
+    background-color: var(--Bright-Red);
+    padding: 10px 20px;
+    color: var(--Vary-Light-Gray);
+    border-radius: 20px;
+}
+
+.update p{
+    color: var(--Vary-Light-Gray);
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+@media screen and (max-width:992px) {
+   #navbar, #hero, #about, #directive, #bottom{
+    padding: 20px 50px;
+   } 
+
+   .navlink{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    margin: 20px 30px 20px;
+   }
+
+   .started, .started1{
+    font-size: 12px;
+   }
+
+   .herodiv{
+    width: 40%;
+   }
+
+   .herodiv h1{
+    font-size: 35px;
+   }
+
+   .herodiv p, .aboutwrt p, .aboutext, .aboutwrt2{
+    font-size: 15px;
+   }
+
+   .heroimg{
+    width: 50%;
+    margin-top: 30px;
+   }
+
+   .aboutwrt, .aboutnmb{
+    width: 100%;
+   }
+
+   .aboutwrt2 h2{
+    font-size: 18px;
+   }
+
+   .aboutwrt h1, .viewhead h1, .directive1 h1{
+    font-size: 30px;
+   }
+
+   .aboutwrt p{
+    margin-right: 35px;
+   }
+
+   .a{
+    padding: 12px;
+    margin: 10px;
+    font-size: 12px;
+   }
+
+   .a h3{
+    margin: 20px 0 15px;
+   }
+
+   .directive1{
+    width: 50%;
+   }
+
+   .home{
+    font-size: 12px;
+   }
+
+   .update{
+    gap: 60px;
+    font-size: 12px;
+    margin-bottom: 50px;
+   }
+}
+
+@media screen and (max-width:768px) {
+    #navbar, #hero, #about, #directive{
+        padding: 20px 30px;
+    }
+
+    .herodiv{
+        width: 50%;
+    }
+
+    .herodiv h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .herodiv p{
+        margin: 20px 0 35px;
+    }
+
+    .aboutwrt h1, .viewhead h1, .directive1 h1{
+        font-size: 25px;
+    }
+
+    .aboutwrt p, .aboutext{
+        font-size: 12px;
+    }
+
+    .aboutwrt2{
+        font-size: 12px;
+    }
+
+    .opinion{
+        margin: 20px 5px;
+    }
+
+    .a{
+        width: 30%;
+    }
+
+    .a p{
+        font-size: 12px;
+    }
+
+    .bottomimg{
+        width: 90%;
+    }
+
+    #bottom{
+        padding: 20px;
+    }
+
+    .update{
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    #navbar, #hero, #about, #directive, #bottom{
+        padding: 10px 20px;
+    }
+
+
+
+    .started, .started1{
+        font-size: 10px;
+    }
+
+    .herodiv{
+        width: 50%;
+    }
+
+    .herodiv h1{
+        font-size: 25px;
+        margin-top: 18px;
+    }
+
+    .herodiv p{
+        margin: 16px 0 25px;
+        font-size: 13px;
+    }
+
+    #about{
+        align-content: center;
+    }
+
+    .aboutwrt p {
+        margin-right: 25px;
+        font-size: 13px;
+    }
+
+    .aboutwrt h1, .viewhead h1, .directive1 h1{
+        font-size: 20px;
+    }
+
+    .aboutwrt2 h2 {
+        font-size: 13px;
+    }
+    
+    .update1{
+        font-size: 10px;
+    }
+
+    .update1 p{
+        font-size: 10px;
+    }
 }
