@@ -434,3 +434,83 @@ a{
         font-size: 10px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    #hero{
+        flex-direction: row-reverse;
+    }
+
+    #about{
+        grid-template-columns: auto;
+    }
+
+    .aboutwrt{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .aboutwrt h1{
+        padding: 20px 30px 0;
+    }
+
+
+    #bottom{
+        flex-direction: column;
+        padding: 40px 20px 0;
+    }
+
+    .icon{
+        margin-bottom: 20px;
+    }
+
+    .update1{
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+
+    .update p{
+        font-size: 10px;
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    #hero{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .herodiv{
+        width: 100%;
+    }
+
+    .herodiv .started{
+        margin-left: 40px;
+    }
+
+    .heroimg{
+        width: 90%;
+    }
+
+    .aboutwrt{
+        text-align: center;
+    }
+
+    #directive{
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        
+    }
+
+    .directive1 h1{
+        width: 150%;
+       text-align: left;
+
+    }
+
+    .update{
+        width: 140%;
+    }
+    
+}
