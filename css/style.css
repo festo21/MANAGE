@@ -27,7 +27,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
+    padding: 20px 70px;
 }
 
 .navlink a{
@@ -46,8 +46,12 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 150px;
+    padding: 50px 70px;
     margin: 0 0 40px;
+}
+
+#hero img{
+    width: 50%;
 }
 
 .herodiv{
@@ -70,7 +74,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--Very-Pale-Red);
-    padding: 20px 150px;
+    padding: 20px 70px;
 }
 
 .aboutwrt{
@@ -175,7 +179,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 150px;
+    padding: 50px 70px;
 }
 
 #directive .started{
@@ -193,7 +197,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 150px;
+    padding: 40px 70px;
     background-color: var(--Very-Dark-Blue);
 }
 
@@ -255,7 +259,7 @@ a{
 
 @media screen and (max-width:992px) {
    #navbar, #hero, #about, #directive, #bottom{
-    padding: 20px 50px;
+    padding: 50px;
    } 
 
    .navlink{
@@ -330,7 +334,7 @@ a{
 
 @media screen and (max-width:768px) {
     #navbar, #hero, #about, #directive{
-        padding: 20px 30px;
+        padding: 50px;
     }
 
     .herodiv{
@@ -386,7 +390,7 @@ a{
 
 @media screen and (max-width: 576px) {
     #navbar, #hero, #about, #directive, #bottom{
-        padding: 10px 20px;
+        padding: 30px;
     }
 
 
@@ -436,9 +440,6 @@ a{
 }
 
 @media screen and (max-width: 480px) {
-    #hero{
-        flex-direction: row-reverse;
-    }
 
     #about{
         grid-template-columns: auto;
@@ -453,6 +454,10 @@ a{
         padding: 20px 30px 0;
     }
 
+    .aboutwrt2{
+        background-color: hsla(10, 100%, 83%, 0.664);
+        border-radius: 50px 0 0 50px;
+    }
 
     #bottom{
         flex-direction: column;
@@ -472,27 +477,31 @@ a{
         font-size: 10px;
         margin-right: 80px;
     }
+
+    .aboutext{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 375px) {
     #hero{
-        flex-direction: column;
         flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    #hero img{
+        width: 100%;
     }
 
     .herodiv{
         width: 100%;
     }
 
-    .herodiv .started{
-        margin-left: 40px;
-    }
-
     .heroimg{
         width: 90%;
     }
 
-    .aboutwrt{
+    .aboutwrt, #bottom{
         text-align: center;
     }
 
@@ -500,17 +509,26 @@ a{
         flex-direction: column;
         gap: 20px;
         text-align: center;
-        
     }
 
-    .directive1 h1{
-        width: 150%;
-       text-align: left;
+    .home{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
 
+    .directive1{
+        margin: 5px auto;
+        text-align: center;
+        width: 70%;
     }
 
     .update{
-        width: 140%;
+        text-align: center;
+    }
+
+    .update1{
+        margin-right: 0;
     }
     
 }
